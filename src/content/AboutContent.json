@@ -1,15 +1,35 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Tailored Strategies for Your Brand",
+  "text": "We craft personalized solutions to meet your goals, ensuring your brand stands out with unique, targeted approaches.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why Customized Strategies?",
+      "content": "We understand that every brand is unique, so we craft personalized solutions tailored to your goals.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why Expertise Across Domains?",
+      "content": "From influencer marketing to meme campaigns, we bring expertise in every aspect of digital marketing.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Why Results-Driven Approach?",
+      "content": "Our strategies focus on measurable growth, ensuring higher ROI and impactful outcomes.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Why End-to-End Support?",
+      "content": "From planning to execution, we handle everything to make your journey seamless and stress-free.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Why Creative Innovation?",
+      "content": "We stay ahead of trends, delivering fresh, engaging, and out-of-the-box campaigns that capture attention.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Why Authentic Connections?",
+      "content": "We focus on building genuine relationships between brands, influencers, and audiences for long-term success.",
       "icon": "notes.svg"
     }
   ]

@@ -97,14 +97,14 @@ const Footer = ({ t }: { t: TFunction }) => {
                     height="30px"
                   />
                 </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
+                {/* <LanguageSwitch onClick={() => handleChange("es")}>
                   <SvgIcon
                     src="spain.svg"
                     aria-label="homepage"
                     width="30px"
                     height="30px"
                   />
-                </LanguageSwitch>
+                </LanguageSwitch> */}
               </LanguageSwitchContainer>
             </Col>
           </Row>
@@ -120,10 +120,11 @@ const Footer = ({ t }: { t: TFunction }) => {
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon
-                  src="logo.svg"
+                  src="logo.jpeg"
                   aria-label="homepage"
                   width="101px"
                   height="64px"
+                  className="header-logo"
                 />
               </LogoContainer>
             </NavLink>

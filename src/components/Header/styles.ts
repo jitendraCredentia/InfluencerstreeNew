@@ -13,6 +13,8 @@ export const HeaderSection = styled("header")`
 
 export const LogoContainer = styled(Link)`
   display: flex;
+  background-color: #2e186a;
+  object-fit: cover;
 `;
 
 export const NavLink = styled("div")`
