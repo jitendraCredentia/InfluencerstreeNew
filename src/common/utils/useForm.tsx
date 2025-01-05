@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { notification } from "antd";
+import emailjs from "emailjs-com";
 
 interface IValues {
   name: string;
@@ -17,7 +18,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
   const [formState, setFormState] = useState<{
     values: IValues;
     errors: IValues;
-  }>({
+  }>( {
     values: { ...initialValues },
     errors: { ...initialValues },
   });
@@ -27,35 +28,42 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const values = formState.values;
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
-
-    const url = ""; // Fill in your API URL here
-
+  
+    // Fill in the EmailJS service ID, template ID, and user ID
+    const serviceID = "service_vgvi3s5"; // Replace with your service ID
+    const templateID = "template_7c0nd9d"; // Replace with your template ID
+    const userID = "ZYVzrbTkZi_tgdmnl"; // Replace with your user ID from EmailJS
+  
     try {
       if (Object.values(errors).every((error) => error === "")) {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+        // Send specific keys to EmailJS instead of sending the entire values object
+        const emailResponse = await emailjs.send(
+          serviceID,
+          templateID,
+          {
+            user_name: values.name, // Map name to user_name
+            user_email: values.email, // Map email to user_email
+            message: values.message, // Map message to message
           },
-          body: JSON.stringify(values),
-        });
-
-        if (!response.ok) {
-          notification["error"]({
-            message: "Error",
-            description:
-              "There was an error sending your message, please try again later.",
-          });
-        } else {
+          userID
+        );
+  
+        if (emailResponse.status === 200) {
+          // Reset the form if the email was sent successfully
           event.target.reset();
           setFormState(() => ({
             values: { ...initialValues },
             errors: { ...initialValues },
           }));
-
+  
           notification["success"]({
             message: "Success",
             description: "Your message has been sent!",
+          });
+        } else {
+          notification["error"]({
+            message: "Error",
+            description: "There was an error sending your message, please try again later.",
           });
         }
       }
@@ -66,6 +74,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
       });
     }
   };
+  
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
