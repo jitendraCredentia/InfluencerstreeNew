@@ -1,5 +1,5 @@
 import SocialMediaCard from "./SocialMediaCard";
-import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaFacebook, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
 import { StyledRow } from "../ContentBlock/styles";
 import { Fade } from "react-awesome-reveal";
@@ -18,11 +18,11 @@ const SocialMedia = ({ direction, id }: ContentBlockProps) => {
         >
           <Col lg={6} md={6} sm={12} xs={24}>
             <SocialMediaCard
-              icon={<FaTwitter style={{ color: "#1DA1F2" }} />}
-              title="Twitter"
-              description="Follow us on Twitter"
-              followers={12500}
-              link="/https://twitter.com"
+              icon={<FaLinkedin style={{ color: "#0A66C2" }} />}
+              title="LinkedIn"
+              description="Follow us on LinkedIn"
+              followers={100}
+              link="https://www.linkedin.com/in/influencerstree/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
           </Col>
           <Col lg={6} md={6} sm={12} xs={24}>
@@ -30,15 +30,17 @@ const SocialMedia = ({ direction, id }: ContentBlockProps) => {
               icon={<FaInstagram style={{ color: "#E4405F" }} />}
               title="Instagram"
               description="Follow us on Instagram"
-              followers={23000}
+              followers={109985}
+              link="https://www.instagram.com/influencerstree/profilecard/?igsh=MWNwOGpnNTk2NHdlOA%3D%3D"
             />
           </Col>
           <Col lg={6} md={6} sm={12} xs={24}>
             <SocialMediaCard
-              icon={<FaFacebook style={{ color: "#1877F2" }} />}
-              title="Facebook"
-              description="Like our Facebook page"
-              followers={15000}
+              icon={<FaYoutube style={{ color: "#FF0000" }} />}
+              title="YouTube"
+              description="Like our YouTube page"
+              followers={1410565}
+               link="https://www.youtube.com/@neuzunlocker"
             />
           </Col>
         </StyledRow>

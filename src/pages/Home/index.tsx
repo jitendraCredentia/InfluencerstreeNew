@@ -28,7 +28,7 @@ const Home = () => {
       />
 
       <SocialMedia 
-        direction="right"
+        direction="left"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
