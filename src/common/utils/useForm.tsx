@@ -30,9 +30,9 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     setFormState((prevState) => ({ ...prevState, errors }));
   
     // Fill in the EmailJS service ID, template ID, and user ID
-    const serviceID = "service_vgvi3s5"; // Replace with your service ID
-    const templateID = "template_7c0nd9d"; // Replace with your template ID
-    const userID = "ZYVzrbTkZi_tgdmnl"; // Replace with your user ID from EmailJS
+    const serviceID = "service_x5cky48"; // Replace with your service ID
+    const templateID = "template_rzriu9k"; // Replace with your template ID
+    const userID = "iPGCRT65MWBlJgMsR"; // Replace with your user ID from EmailJS
   
     try {
       if (Object.values(errors).every((error) => error === "")) {
