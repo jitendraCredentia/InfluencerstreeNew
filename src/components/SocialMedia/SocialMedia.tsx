@@ -1,5 +1,5 @@
 import SocialMediaCard from "./SocialMediaCard";
-import { FaTwitter, FaInstagram, FaFacebook, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { withTranslation } from "react-i18next";
 import { StyledRow } from "../ContentBlock/styles";
 import { Fade } from "react-awesome-reveal";
@@ -16,7 +16,6 @@ const SocialMedia = ({ direction, id }: ContentBlockProps) => {
           id={id}
           direction={direction}
         >
-         
           <Col lg={6} md={6} sm={12} xs={24}>
             <SocialMediaCard
               icon={<FaInstagram style={{ color: "#E4405F" }} />}
@@ -32,7 +31,7 @@ const SocialMedia = ({ direction, id }: ContentBlockProps) => {
               title="YouTube"
               description="Like our YouTube page"
               followers={1410565}
-               link="https://www.youtube.com/@neuzunlocker"
+              link="https://www.youtube.com/@neuzunlocker"
             />
           </Col>
           <Col lg={6} md={6} sm={12} xs={24}>
