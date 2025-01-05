@@ -5,12 +5,14 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+// import { SocialMedia } from "../../components/SocialMedia/SocialMedia";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const SocialMedia = lazy(() => import("../../components/SocialMedia/SocialMedia"));
 
 const Home = () => {
   return (
@@ -24,6 +26,17 @@ const Home = () => {
         icon="promo1.jpg"
         id="intro"
       />
+
+      <SocialMedia 
+        direction="right"
+        title={IntroContent.title}
+        content={IntroContent.text}
+        button={IntroContent.button}
+        icon="promo1.jpg"
+        id="intro"
+      />
+
+    
       <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
