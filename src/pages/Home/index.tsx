@@ -5,6 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import TeamCarousel from "../../components/TeamCarousel/TeamCarousel";
 // import { SocialMedia } from "../../components/SocialMedia/SocialMedia";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -63,6 +64,9 @@ const Home = () => {
         content={ProductContent.text}
         icon="waving.svg"
         id="product"
+      />
+
+      <TeamCarousel
       />
       <Contact
         title={ContactContent.title}
