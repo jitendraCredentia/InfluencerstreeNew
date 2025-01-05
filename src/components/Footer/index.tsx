@@ -20,6 +20,8 @@ import {
   LanguageSwitch,
   LanguageSwitchContainer,
 } from "./styles";
+import ScrollToTop from "../../common/ScrollToTop";
+import { useState } from "react";
 
 interface SocialLinkProps {
   href: string;
@@ -31,7 +33,18 @@ const Footer = ({ t }: { t: TFunction }) => {
     i18n.changeLanguage(language);
   };
 
+  const [visible, setVisibility] = useState(false);
+  const scrollTo = (id: string) => {
+   const element = document.getElementById(id) as HTMLDivElement;
+   element.scrollIntoView({
+     behavior: "smooth",
+   });
+   setVisibility(false);
+ };
+
   const SocialLink = ({ href, src }: SocialLinkProps) => {
+    
+    
     return (
       <a
         href={href}
@@ -45,6 +58,8 @@ const Footer = ({ t }: { t: TFunction }) => {
     );
   };
 
+
+
   return (
     <>
       <FooterSection>
@@ -56,9 +71,9 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <div  onClick={() => scrollTo("contact")}>
                 <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              </div>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
@@ -86,7 +101,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Large to="/">{t("Press")}</Large>
               <Large to="/">{t("Careers & Culture")}</Large>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
@@ -97,16 +112,16 @@ const Footer = ({ t }: { t: TFunction }) => {
                     height="30px"
                   />
                 </LanguageSwitch>
-                {/* <LanguageSwitch onClick={() => handleChange("es")}>
+                <LanguageSwitch onClick={() => handleChange("es")}>
                   <SvgIcon
                     src="spain.svg"
                     aria-label="homepage"
                     width="30px"
                     height="30px"
                   />
-                </LanguageSwitch> */}
+                </LanguageSwitch>
               </LanguageSwitchContainer>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </FooterSection>
@@ -120,7 +135,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon
-                  src="newlogo.jpg"
+                  src="newlogo.png"
                   aria-label="homepage"
                   width="101px"
                   height="64px"
@@ -128,7 +143,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                 />
               </LogoContainer>
             </NavLink>
-            <FooterContainer>
+            {/* <FooterContainer>
               <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
                 src="github.svg"
@@ -157,7 +172,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                   alt="Buy Me a Coffee at ko-fi.com"
                 />
               </a>
-            </FooterContainer>
+            </FooterContainer> */}
           </Row>
         </Container>
       </Extra>

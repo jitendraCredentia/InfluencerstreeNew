@@ -16,15 +16,7 @@ const SocialMedia = ({ direction, id }: ContentBlockProps) => {
           id={id}
           direction={direction}
         >
-          <Col lg={6} md={6} sm={12} xs={24}>
-            <SocialMediaCard
-              icon={<FaLinkedin style={{ color: "#0A66C2" }} />}
-              title="LinkedIn"
-              description="Follow us on LinkedIn"
-              followers={100}
-              link="https://www.linkedin.com/in/influencerstree/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            />
-          </Col>
+         
           <Col lg={6} md={6} sm={12} xs={24}>
             <SocialMediaCard
               icon={<FaInstagram style={{ color: "#E4405F" }} />}
@@ -41,6 +33,15 @@ const SocialMedia = ({ direction, id }: ContentBlockProps) => {
               description="Like our YouTube page"
               followers={1410565}
                link="https://www.youtube.com/@neuzunlocker"
+            />
+          </Col>
+          <Col lg={6} md={6} sm={12} xs={24}>
+            <SocialMediaCard
+              icon={<FaLinkedin style={{ color: "#0A66C2" }} />}
+              title="LinkedIn"
+              description="Follow us on LinkedIn"
+              followers={100}
+              link="https://www.linkedin.com/in/influencerstree/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             />
           </Col>
         </StyledRow>
