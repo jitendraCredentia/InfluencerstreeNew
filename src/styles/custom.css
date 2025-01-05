@@ -131,4 +131,7 @@
     height: 150px !important;
     object-fit: contain;
   }
-  
+  .c-px-40{
+    margin-left: 40px;
+    margin-right: 40px;
+  }

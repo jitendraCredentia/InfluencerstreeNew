@@ -37,14 +37,6 @@ const teamMembers: TeamMember[] = [
   }
 ];
 
-// Function to update role according to designation
-const getRoleByDesignation = (designation: string) => {
-  if (designation.includes('Chief Marketing Officer')) return 'Marketing Head';
-  if (designation.includes('Chief Operating officer')) return 'Operations Lead';
-  if (designation.includes('Chief Creative Officer')) return 'Creative Lead';
-  if (designation.includes('CEO & Founder')) return 'Company Founder';
-  return 'Team Member';
-};
 
 // Chunk array for carousel slides (2 members per slide)
 const chunkArray = (array: TeamMember[], size: number) => {
@@ -89,8 +81,8 @@ const TeamCarousel = () => {
           <div key={index}>
             <Row gutter={[16, 16]} justify="center" align="middle">
               {chunk.map((member, memberIndex) => (
-                <Col key={memberIndex} lg={12} md={12} sm={24} xs={24}>
-                  <div className="team-card">
+                <Col key={memberIndex} lg={12} md={12} sm={24} xs={24} className=''>
+                  <div className="team-card c-px-40">
                     <img
                       src={`/img/svg/${member?.image}`}
                       alt={member.name}
@@ -99,7 +91,7 @@ const TeamCarousel = () => {
                     />
                     
                     <h3>{member.name}</h3>
-                    <p>{getRoleByDesignation(member.designation)}</p>
+                    <p>{member.role}</p>
                     <span>{member.designation}</span>
                   </div>
                 </Col>
