@@ -1,18 +1,20 @@
+# Influencer Tree - Free React Landing Page Template
+
 ![Influencer Tree](https://user-images.githubusercontent.com/48876996/121569479-e179db80-ca31-11eb-8a48-9c3de9b142f3.gif)
 
-![Influencer Tree React Template License](https://img.shields.io/github/license/Adrinlol/Influencer Tree-react-template)
-![Influencer Tree React Template Release Date](https://img.shields.io/github/release-date/Adrinlol/Influencer Tree-react-template)
-![Influencer Tree React TemplateStars](https://img.shields.io/github/stars/Adrinlol/Influencer Tree-react-template)
-![Influencer Tree React Template Language](https://img.shields.io/github/languages/top/Adrinlol/Influencer Tree-react-template)
-![Influencer Tree React Template TypeScript](https://badgen.net/npm/types/tslib)
+![Influencer Tree Digital Agency License](https://img.shields.io/github/license/Adrinlol/Influencer-Tree-react-template)
+![Influencer Tree Digital Agency Release Date](https://img.shields.io/github/release-date/Adrinlol/Influencer-Tree-react-template)
+![Influencer Tree Digital Agency Stars](https://img.shields.io/github/stars/Adrinlol/Influencer-Tree-react-template)
+![Influencer Tree Digital Agency Language](https://img.shields.io/github/languages/top/Adrinlol/Influencer-Tree-react-template)
+![Influencer Tree Digital Agency TypeScript](https://badgen.net/npm/types/tslib)
 
-## Free React landing page template
+## Overview
 
-[Influencer Tree][Influencer Tree] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
+[Influencer Tree][InfluencerTree] is an open-source React landing page template written in TypeScript. It's designed for developers and startups who need a quick, professional landing page for their business or project.
 
-This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
+This digital agency template supports multi-lingual features, smooth animations, ready-to-use sections, and best of all, all the content is managed through JSON files. This makes it simple for anyone to update the content without needing prior React.js knowledge.
 
-## Table of contents
+## Table of Contents
 
 - [Features](#features)
 - [Google Lighthouse](#google-lighthouse)
@@ -22,91 +24,61 @@ This React template comes with multi-lingual support, smooth animations, set of 
   - [SEO](#seo)
 - [Demo](#demo)
 - [Installation](#installation)
+- [What's Included](#whats-included)
 - [Special Thanks](#special-thanks)
 - [Usage](#usage)
 - [License](#license)
 
 ## Features
 
-Your project will have everything you need to build a modern single-page React app:
+Influencer Tree provides everything you need to build a modern, single-page React app:
 
-- 🎁 **Modern** – Template created using the latest features of React (State management using Hooks, Code-Splitting to reduce the bundle size)
-
-- 💻 **Responsive** – Highly responsive and reusable UI components, that change depending on the provided props
-
-- 🚀 **Fast** – Buttery smooth experience thanks to the implementation of best practices and no third party dependencies, resulting in <b>PERFECT</b> Google Lighthouse scores
-
-- 🏷 **TypeScript support** – Influencer Tree is written in TypeScript to improve the DX
-
-- 🌍 **Internationalization** - Prebuilt standalone file that works in every environment and doesn't require reloading the page to translate the content
-
-- 🛸 **Routing** - Each file inside the src/pages directory will generate its own route, so you don't have to manually handle the routing
-
-- 🤙 **Contact Form** - Contact form written in React Hooks, with uncontrolled form validation to reduce unnecessary performance penalty. You just need to provide the endpoint
-
-- ⚙️ **Maintenance** - All of the content is stored in the JSON files, so that you can easily manage the content of the website
+- 🎁 **Modern** – Uses React's latest features like state management with Hooks and Code-Splitting to reduce bundle size.
+- 💻 **Responsive** – UI components are highly responsive and reusable, adapting to the props provided.
+- 🚀 **Fast** – Built with performance in mind, it follows best practices to deliver a buttery smooth experience and **PERFECT** Google Lighthouse scores.
+- 🏷 **TypeScript Support** – Written entirely in TypeScript for a better developer experience.
+- 🌍 **Internationalization** – Comes with a prebuilt internationalization file that supports multiple languages without page reload.
+- 🛸 **Routing** – Automatically generates routes for each file inside the `src/pages` directory, so no manual routing is required.
+- 🤙 **Contact Form** – Includes a contact form that uses React Hooks with uncontrolled form validation for better performance.
+- ⚙️ **Easy Maintenance** – All content is stored in JSON files, making it easy to update and manage.
 
 ## Google Lighthouse
 
-![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
+![Google Lighthouse Report](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
 
-[Google Lighthouse][Google Lighthouse] is an open-source, automated tool for measuring the quality of web pages. Google Lighthouse audits performance, accessibility and search engine optimization of web pages.
+[Google Lighthouse][GoogleLighthouse] is an open-source tool that measures the quality of web pages. It audits metrics such as performance, accessibility, best practices, and SEO.
 
 ### Performance
 
-Audits for metrics like first paint and time to interactive to determine lag.
+Checks metrics like First Paint and Time to Interactive to gauge page speed.
 
 ### Accessibility
 
-Checks for common issues that may prevent users from accessing your content.
+Ensures that your site is usable by everyone, regardless of disability or assistive technologies.
 
 ### Best Practices
 
-Looks for everything from HTTPS usage to correct image aspect ratios.
+Verifies factors such as HTTPS usage and correct image aspect ratios to guarantee your site follows modern standards.
 
 ### SEO 
 
-Checks for best practices to ensure your site is discoverable.
-
+Checks that your site is discoverable by search engines and follows best practices for SEO.
 
 ## Demo
 
-Check the live demo here 👉️ https://Influencer Tree-web.netlify.app/
+Check out the live demo here 👉️ [Influencer Tree Demo](https://influencertree-web.netlify.app/)
 
+## Installation
 
-### Installation
+To set up this project locally, you’ll need Node.js version 10.16.0 or later. While Node.js isn't required for deployment, we recommend using the latest LTS version for development.
 
-You’ll need to have Node 10.16.0 or later version on your local development machine (but it’s not required on the server). I recommend using the latest LTS version.
+### Steps:
 
-To create a new app, you have to:
+1. **Clone the repository**: 
+   Begin by cloning this repository to get your local copy of the project.
+   You can find detailed instructions on [Cloning a GitHub Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
 
-Begin by cloning this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
-
-## What's included
-
-- [antd][antd] - React UI library that contains a set of high quality components.
-- [react-awesome-reveal][react-awesome-reveal] - High performance library that adds reveal animations using the Intersection Observer API.
-- [styled-componets][styled-componets] - Variant on “CSS-in-JS”—which solves many of the problems with traditional CSS.
-- [i18next][i18next] - Internationalization-framework written in and for JavaScript.
-
-## Special thanks
-
-[whoooa][whoooa] - Use fantastic, handmade illustrations with easily changeable colors and different styles.
-
-## Usage
-
-Use it for whatever you want, and be sure to reach out to me on [Twitter](https://twitter.com/Adrinlolx) if you have any questions, or build something cool with it.
-
-## License
-
-Licensed under the MIT license.
-
-<!-- prettier-ignore-start -->
-[antd]: https://github.com/ant-design/ant-design
-[react-awesome-reveal]: https://www.npmjs.com/package/react-awesome-reveal
-[styled-componets]: https://github.com/styled-components/styled-components
-[i18next]: https://github.com/i18next/i18next
-[whoooa]: https://www.whoooa.rocks/
-[Influencer Tree]: https://www.npmjs.com/package/cra-template-adrinlol
-[Google Lighthouse]: https://developers.google.com/web/tools/lighthouse
-<!-- prettier-ignore-end -->
+2. **Install dependencies**:
+   Once cloned, run the following command to install dependencies:
+   ```bash
+   npm install
